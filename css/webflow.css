@@ -11,13 +11,11 @@ html {
 body {
     font-family: Helvetica;
     min-height:100%;
-    /*background-color:#006ab4;*/
+    margin:0px;
     background: linear-gradient(to bottom, #036 0%,#0076c5 50%,#036 100%);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     color:#333;
-    margin:0;
     padding-bottom: 170px;
+    background-attachment: fixed;
 }
 
 img {
@@ -41,7 +39,7 @@ img {
     display:table;
     background-color:#fff;
     width:900px;
-    height:62px;
+    height:60px;
 }
 
 .section-navi {
@@ -222,7 +220,7 @@ img {
 
 .search-div {
     display:table-cell; vertical-align:middle;
-    padding-top:21px;
+    padding-top:20px;
     padding-right:30px;
     float:right;
 }
@@ -382,6 +380,17 @@ img {
     background-position: center center;
     display: table-cell;
     display:table-cell; vertical-align:middle;
+}
+
+.head-strip1 {
+    height:10px;
+    background-color:#003c6e;
+}
+
+.head-strip2 {
+    height:90px;
+    margin-bottom:-90px;
+    background-color:#fff;
 }
 
 /*****************************************************************************
