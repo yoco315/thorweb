@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Thu Feb 13 2014 10:57:21 GMT+0000 (UTC) -->
+<html data-wf-site="52fb3b590998ff795100053b">
+<head>
+  <meta charset="utf-8">
+  <title>Slate Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <script>
+    var selected_feature_id = [-1, -1];
+
+    function set_feature_block(b, selected)
+    {
+        if(selected) {
+            b.className = "feature-block-expanded";
+        }
+    }
+
+    function fon(i, j) {
+      feature_block_list = [
+        [feature_0_0, feature_0_1, feature_0_2],
+        [feature_1_0, feature_1_1, feature_1_2]
+      ];
+      feature_detail_list = [
+        [sec_feature_detail_0_0, sec_feature_detail_0_1, sec_feature_detail_0_2],
+        [sec_feature_detail_1_0, sec_feature_detail_1_1, sec_feature_detail_1_2]
+      ];
+      if(selected_feature_id[i] == -1) {
+        selected_feature_id[i] = j;
+      } else if(selected_feature_id[i] == j) {
+        selected_feature_id[i] = -1;
+      } else {
+        selected_feature_id[i] = j;
+      }
+      feature_detail_list[i][0].style.display = (selected_feature_id[i] == 0 ? "" : "none");
+      feature_detail_list[i][1].style.display = (selected_feature_id[i] == 1 ? "" : "none");
+      feature_detail_list[i][2].style.display = (selected_feature_id[i] == 2 ? "" : "none");
+      feature_block_list[i][0].className = (selected_feature_id[i] == 0 ? "feature-block-expanded" : "feature-block");
+      feature_block_list[i][1].className = (selected_feature_id[i] == 1 ? "feature-block-expanded" : "feature-block");
+      feature_block_list[i][2].className = (selected_feature_id[i] == 2 ? "feature-block-expanded" : "feature-block");
+    }
+    window.onload = function() {
+      fon(0, -1);
+      fon(1, -1);
+    }
+  </script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  <link rel="apple-touch-icon" href="https://y7v4p6k4.ssl.hwcdn.net/51d1bb05fc804b2621000001/51e06f0756878bb26a000008_webclip-slate.png">
+</head>
+
+<body class="body-background">
+  <div class="whole-container">
+
+    <!-- head ======================================================== -->
+
+    <div class="section-head">
+      <div class="logo-div">
+        <img src="images/thorlogo.png"/>
+      </div>
+      <div class="search-div">
+        search
+      </div>
+    </div>
+
+    <!-- nav ======================================================== -->
+
+    <div class="section-navi">
+        <a href="index.html"><span class="nav-button"> Home      </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+        <a href="index.html"><span class="nav-button"> Learn     </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+        <a href="index.html"><span class="nav-button"> Download  </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+        <a href="index.html"><span class="nav-button"> Community </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+        <a href="index.html"><span class="nav-button"> Code      </span></a>                                           
+    </div>
+
+    <!-- download & coding ======================================================== -->
+
+    <div class="section-online-compile">
+      <span class="logo-and-download">
+        <div class="compile-logo">
+          <img src="images/logo.png"/>
+        </div>
+        <a href="thor-script.zip">
+          <div class="btn-download">
+            <div class="text-download">
+              DOWNLOAD
+            </div>
+          </div>
+        </a>
+      </span>
+
+      <div class="code-and-run-panel">
+        <div>
+          <textarea class="code">
+import thor.lang;
+  @entry task main() {
+  println("hello world");
+}
+          </textarea>
+        </div>
+
+        <div class="run-button-panel">
+          <div>
+            <a href="#"><div class="run-button"> RUN   </div></a>
+            <a href="#"><div class="run-button"> SHARE </div></a>
+            <a href="#"><div class="run-button"> TOUR  </div></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- don't know what is that ======================================================== -->
+
+    <div class="section-dont-know">
+      <div class="dont-know-text-large">
+        Object-Oriented Meets Functional
+      </div>
+      <div class="dont-know-text-small">
+        Have the best of both worlds. Construct elegant class hierarchies
+        for maximum code reuse and extensibility, implement their behavior
+        using higher-order functions. Or anything in-between.
+      </div>
+    </div>
+
+    <!-- feature grid title ======================================================== -->
+
+    <div class="section-feature-title">
+      <div class="nutshell-text">
+        <div class="nutshell-text-large">
+          ThorScirpt in a Nutshell
+        </div>
+        <div class="nutshell-text-small">
+          Have the best of both worlds. Construct elegang class hierarchies
+          for maximum code reuse and extensibility
+        </div>
+      </div>
+    </div>
+
+    <!-- feature grid 1 ======================================================== -->
+
+    <div class="section-feature-grid">
+      <div class="grid">
+        <div class="feature-block-expanded" id="feature_0_0" onclick="fon(0, 0)">
+          <div class="feature-block-text-large">
+            Seamless C++ Interlop
+          </div>
+          <div class="feature-block-text-small">
+            So the type system don't feel so static. Don't work for the type
+            system. Let the type system work for you.
+          </div>
+        </div>
+        <div class="feature-block" id="feature_0_1" onclick="fon(0, 1)">
+          <div class="feature-block-text-large">
+            Seamless C++ Interlop
+          </div>
+          <div class="feature-block-text-small">
+            So the type system don't feel so static. Don't work for the type
+            system. Let the type system work for you.
+          </div>
+        </div>
+        <div class="feature-block" id="feature_0_2" onclick="fon(0, 2)">
+          <div class="feature-block-text-large">
+            Seamless C++ Interlop
+          </div>
+          <div class="feature-block-text-small">
+            So the type system don't feel so static. Don't work for the type
+            system. Let the type system work for you.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- feature detail 1 ======================================================== -->
+
+    <div class="section-feature-detail" id="sec_feature_detail_0_0">
+      <div class="feature-detail-block">
+        <div class="feature-detail-title">
+          Seamless C++ Interlop
+        </div>
+        <div class="feature-detail-detail">
+          You can bind native C++ to you ThorScript to leverage the max
+          performance. Declare interface in ThorScript, and implement it
+          in C++. ThorScript compile tool chain will do the rest for you,
+          even for class template and function template!
+        </div>
+        <pre class="thor-source-code">
+@entry task main() {
+  println("hello");
+  exit(0);
+}
+        </pre>
+      </div>
+    </div>
+
+    <div class="section-feature-detail" id="sec_feature_detail_0_1">
+      <div class="feature-detail-block">
+        <div class="feature-detail-title">
+          Featutr II
+        </div>
+        <div class="feature-detail-detail">
+          Featutr II
+          Featutr II
+          Featutr II
+        </div>
+        <pre class="thor-source-code">
+@entry task main() {
+  println("hello");
+  exit(0);
+}
+        </pre>
+      </div>
+    </div>
+
+    <div class="section-feature-detail" id="sec_feature_detail_0_2">
+      <div class="feature-detail-block">
+        <div class="feature-detail-title">
+          Featutr III
+        </div>
+        <div class="feature-detail-detail">
+          Featutr III
+          Featutr III
+          Featutr III
+        </div>
+        <pre class="thor-source-code">
+@entry task main() {
+  println("hello");
+  exit(0);
+}
+        </pre>
+      </div>
+    </div>
+
+    <!-- feature grid 2 ======================================================== -->
+
+    <div class="section-feature-grid">
+      <div class="grid">
+        <div class="feature-block" id="feature_1_0" onclick="fon(1, 0)">
+          <div class="feature-block-text-large">
+            Seamless C++ Interlop
+          </div>
+          <div class="feature-block-text-small">
+            So the type system don't feel so static. Don't work for the type
+            system. Let the type system work for you.
+          </div>
+        </div>
+        <div class="feature-block" id="feature_1_1" onclick="fon(1, 1)">
+          <div class="feature-block-text-large">
+            Seamless C++ Interlop
+          </div>
+          <div class="feature-block-text-small">
+            So the type system don't feel so static. Don't work for the type
+            system. Let the type system work for you.
+          </div>
+        </div>
+        <div class="feature-block" id="feature_1_2"  onclick="fon(1, 2)">
+          <div class="feature-block-text-large">
+            Seamless C++ Interlop VI
+          </div>
+          <div class="feature-block-text-small">
+            So the type system don't feel so static. Don't work for the type
+            system. Let the type system work for you.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- feature detail 2 ======================================================== -->
+
+    <div class="section-feature-detail" id="sec_feature_detail_1_0">
+      <div class="feature-detail-block">
+        <div class="feature-detail-title">
+          Seamless C++ Interlop
+        </div>
+        <div class="feature-detail-detail">
+          You can bind native C++ to you ThorScript to leverage the max
+          performance. Declare interface in ThorScript, and implement it
+          in C++. ThorScript compile tool chain will do the rest for you,
+          even for class template and function template!
+        </div>
+        <pre class="thor-source-code">
+@entry task main() {
+  println("hello");
+  exit(0);
+}
+        </pre>
+      </div>
+    </div>
+
+    <div class="section-feature-detail" id="sec_feature_detail_1_1">
+      <div class="feature-detail-block">
+        <div class="feature-detail-title">
+          Featutr II
+        </div>
+        <div class="feature-detail-detail">
+          Featutr II
+          Featutr II
+          Featutr II
+        </div>
+        <pre class="thor-source-code">
+@entry task main() {
+  println("hello");
+  exit(0);
+}
+        </pre>
+      </div>
+    </div>
+
+    <div class="section-feature-detail" id="sec_feature_detail_1_2">
+      <div class="feature-detail-block">
+        <div class="feature-detail-title">
+          Featutr III
+        </div>
+        <div class="feature-detail-detail">
+          Featutr III
+          Featutr III
+          Featutr III
+        </div>
+        <pre class="thor-source-code">
+@entry task main() {
+  println("hello");
+  exit(0);
+}
+        </pre>
+      </div>
+    </div>
+
+
+    <!-- foot ======================================================== -->
+
+    <div class="section-foot">
+      <div class="foot-zillians-logo">
+        <img src="images/zillianslogo.png"/>
+      </div>
+      <div class="foot-thor-logo">
+        <img src="images/thorlogo.png"/>
+      </div>
+  
+    </div>
+
+    <!-- end ======================================================== -->
+
+  </div>
+</body>
+</html>
