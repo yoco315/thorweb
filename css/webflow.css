@@ -324,6 +324,7 @@ img {
     padding: 30px;
     border-radius:3px;
     box-shadow: inset 0px 0px 8px #eee;
+    resize: none;
 }
 
 .foot-zillians-logo {
