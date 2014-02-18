@@ -25,7 +25,6 @@ img {
 }
 
 .whole-container {
-    background-color:#777;
     margin-left:auto;
     margin-right:auto;
     max-width:900px;
@@ -48,6 +47,7 @@ img {
     padding-top:8px;
     padding-bottom:8px;
     text-align: center;
+    border-radius: 5px;
 }
 
 .section-online-compile {
@@ -57,6 +57,7 @@ img {
     padding-top:163px;
     padding-bottom:163px;
     height:650px;
+    border-radius: 5px;
 }
 
 .section-dont-know {
@@ -91,7 +92,7 @@ img {
 .section-foot {
     background-color:#fff;
     padding-top: 40px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
     padding-left: 100px;
     padding-right: 100px;
     width: 900px;
@@ -258,7 +259,7 @@ img {
 }
 
 .logo-and-download {
-    padding-top: 30px;
+    padding-top: 25px;
     width: 220px;
     float:left;
 }
@@ -329,12 +330,13 @@ img {
 .foot-zillians-logo {
     float: left;
     font-size: 10px;
-    display:table-cell; vertical-align:bottom;
+    padding-top: 8px;
+    display:table-cell; vertical-align:center;
 }
 
 .foot-thor-logo {
     float: right;
-    display:table-cell; vertical-align:bottom;
+    display:table-cell; vertical-align:center;
 
 }
 
