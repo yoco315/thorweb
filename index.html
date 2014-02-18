@@ -9,41 +9,24 @@
   <link rel="stylesheet" type="text/css" href="css/webflow.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <script>
-    var selected_feature_id = [-1, -1];
-
-    function set_feature_block(b, selected)
-    {
-        if(selected) {
-            b.className = "feature-block-expanded";
-        }
-    }
-
-    function fon(i, j) {
+    var selected_feature_id = -1;
+    function fon(i) {
       feature_block_list = [
-        [feature_0_0, feature_0_1, feature_0_2],
-        [feature_1_0, feature_1_1, feature_1_2]
+        feature_0, feature_1, feature_2,
+        feature_3, feature_4, feature_5
       ];
       feature_detail_list = [
-        [sec_feature_detail_0_0, sec_feature_detail_0_1, sec_feature_detail_0_2],
-        [sec_feature_detail_1_0, sec_feature_detail_1_1, sec_feature_detail_1_2]
+        sec_feature_detail_0, sec_feature_detail_1, sec_feature_detail_2,
+        sec_feature_detail_3, sec_feature_detail_4, sec_feature_detail_5
       ];
-      if(selected_feature_id[i] == -1) {
-        selected_feature_id[i] = j;
-      } else if(selected_feature_id[i] == j) {
-        selected_feature_id[i] = -1;
-      } else {
-        selected_feature_id[i] = j;
+      selected_feature_id = selected_feature_id == i ? -1 : i;
+      for(var i = 0; i < 6; ++i) {
+        feature_detail_list[i].style.display = (selected_feature_id == i ? "" : "none");
+        feature_block_list[i].className = (selected_feature_id == i ? "feature-block-expanded" : "feature-block");
       }
-      feature_detail_list[i][0].style.display = (selected_feature_id[i] == 0 ? "" : "none");
-      feature_detail_list[i][1].style.display = (selected_feature_id[i] == 1 ? "" : "none");
-      feature_detail_list[i][2].style.display = (selected_feature_id[i] == 2 ? "" : "none");
-      feature_block_list[i][0].className = (selected_feature_id[i] == 0 ? "feature-block-expanded" : "feature-block");
-      feature_block_list[i][1].className = (selected_feature_id[i] == 1 ? "feature-block-expanded" : "feature-block");
-      feature_block_list[i][2].className = (selected_feature_id[i] == 2 ? "feature-block-expanded" : "feature-block");
     }
     window.onload = function() {
-      fon(0, -1);
-      fon(1, -1);
+      fon(-1);
     }
   </script>
   <script>
@@ -148,7 +131,7 @@ import thor.lang;
 
     <div class="section-feature-grid">
       <div class="grid">
-        <div class="feature-block-expanded" id="feature_0_0" onclick="fon(0, 0)">
+        <div class="feature-block-expanded" id="feature_0" onclick="fon(0)">
           <div class="feature-block-text-large">
             Seamless C++ Interlop
           </div>
@@ -157,7 +140,7 @@ import thor.lang;
             system. Let the type system work for you.
           </div>
         </div>
-        <div class="feature-block" id="feature_0_1" onclick="fon(0, 1)">
+        <div class="feature-block" id="feature_1" onclick="fon(1)">
           <div class="feature-block-text-large">
             Seamless C++ Interlop
           </div>
@@ -166,7 +149,7 @@ import thor.lang;
             system. Let the type system work for you.
           </div>
         </div>
-        <div class="feature-block" id="feature_0_2" onclick="fon(0, 2)">
+        <div class="feature-block" id="feature_2" onclick="fon(2)">
           <div class="feature-block-text-large">
             Seamless C++ Interlop
           </div>
@@ -180,7 +163,7 @@ import thor.lang;
 
     <!-- feature detail 1 ======================================================== -->
 
-    <div class="section-feature-detail" id="sec_feature_detail_0_0">
+    <div class="section-feature-detail" id="sec_feature_detail_0">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
           Seamless C++ Interlop
@@ -200,7 +183,7 @@ import thor.lang;
       </div>
     </div>
 
-    <div class="section-feature-detail" id="sec_feature_detail_0_1">
+    <div class="section-feature-detail" id="sec_feature_detail_1">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
           Featutr II
@@ -219,7 +202,7 @@ import thor.lang;
       </div>
     </div>
 
-    <div class="section-feature-detail" id="sec_feature_detail_0_2">
+    <div class="section-feature-detail" id="sec_feature_detail_2">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
           Featutr III
@@ -242,7 +225,7 @@ import thor.lang;
 
     <div class="section-feature-grid">
       <div class="grid">
-        <div class="feature-block" id="feature_1_0" onclick="fon(1, 0)">
+        <div class="feature-block" id="feature_3" onclick="fon(3)">
           <div class="feature-block-text-large">
             Seamless C++ Interlop
           </div>
@@ -251,7 +234,7 @@ import thor.lang;
             system. Let the type system work for you.
           </div>
         </div>
-        <div class="feature-block" id="feature_1_1" onclick="fon(1, 1)">
+        <div class="feature-block" id="feature_4" onclick="fon(4)">
           <div class="feature-block-text-large">
             Seamless C++ Interlop
           </div>
@@ -260,7 +243,7 @@ import thor.lang;
             system. Let the type system work for you.
           </div>
         </div>
-        <div class="feature-block" id="feature_1_2"  onclick="fon(1, 2)">
+        <div class="feature-block" id="feature_5"  onclick="fon(5)">
           <div class="feature-block-text-large">
             Seamless C++ Interlop VI
           </div>
@@ -274,7 +257,7 @@ import thor.lang;
 
     <!-- feature detail 2 ======================================================== -->
 
-    <div class="section-feature-detail" id="sec_feature_detail_1_0">
+    <div class="section-feature-detail" id="sec_feature_detail_3">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
           Seamless C++ Interlop
@@ -294,7 +277,7 @@ import thor.lang;
       </div>
     </div>
 
-    <div class="section-feature-detail" id="sec_feature_detail_1_1">
+    <div class="section-feature-detail" id="sec_feature_detail_4">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
           Featutr II
@@ -313,7 +296,7 @@ import thor.lang;
       </div>
     </div>
 
-    <div class="section-feature-detail" id="sec_feature_detail_1_2">
+    <div class="section-feature-detail" id="sec_feature_detail_5">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
           Featutr III
