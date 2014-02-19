@@ -395,6 +395,69 @@ img {
     background-color:#fff;
 }
 
+.section-learn-body {
+    overflow:auto;
+    background-color:#fff;
+    padding:100px;
+}
+
+.sidebar {
+    float:left;
+    display:inline-block;
+    width:180px;
+}
+
+.sidebar-link {
+    height:42px;
+    font-size:14px;
+    color:#0077c7;
+    padding-top:14px;
+    padding-left:28px;
+}
+
+.sidebar-link:hover {
+    height:42px;
+    font-size:14px;
+    background-color:#b2d6ee;
+    background-image:url('../images/learn-sidebar-vertbar.png');
+    background-repeat:no-repeat;
+    border-radius:3px;
+    color:#0077c7;
+    padding-top:14px;
+    padding-left:28px;
+}
+
+.learn-content {
+    float:right;
+    width:520px;
+    padding-left:35px;
+    color:#003c6e;
+
+}
+
+.learn-content-chapter {
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.learn-sidebar-hr {
+    background-color:#0077c7;
+    color:#0077c7;
+    border-width:0px;
+    height:1px;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+
+.learn-chapter-hr {
+    background-color:#bfcbd7;
+    border-width:0px;
+    height:2px;
+    color:#bfcbd7;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
 /*****************************************************************************
  * ========
  ****************************************************************************/

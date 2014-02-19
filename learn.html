@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Thu Feb 13 2014 10:57:21 GMT+0000 (UTC) -->
+<html data-wf-site="52fb3b590998ff795100053b">
+<head>
+  <meta charset="utf-8">
+  <title>Slate Template</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <script>
+    var selected_feature_id = -1;
+    function fon(i) {
+      feature_block_list = [
+        feature_0, feature_1, feature_2,
+        feature_3, feature_4, feature_5
+      ];
+      feature_detail_list = [
+        sec_feature_detail_0, sec_feature_detail_1, sec_feature_detail_2,
+        sec_feature_detail_3, sec_feature_detail_4, sec_feature_detail_5
+      ];
+      selected_feature_id = selected_feature_id == i ? -1 : i;
+      for(var i = 0; i < 6; ++i) {
+        feature_detail_list[i].style.display = (selected_feature_id == i ? "" : "none");
+        feature_block_list[i].className = (selected_feature_id == i ? "feature-block-expanded" : "feature-block");
+      }
+    }
+    window.onload = function() {
+      fon(-1);
+    }
+  </script>
+  <script>
+    if (/mobile/i.test(navigator.userAgent)) document.documentElement.className += ' w-mobile';
+  </script>
+  <link rel="shortcut icon" type="image/x-icon" href="https://y7v4p6k4.ssl.hwcdn.net/placeholder/favicon.ico">
+  <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script><![endif]-->
+  <link rel="apple-touch-icon" href="https://y7v4p6k4.ssl.hwcdn.net/51d1bb05fc804b2621000001/51e06f0756878bb26a000008_webclip-slate.png">
+</head>
+
+<body class="body-background">
+  <div class="head-strip1"> </div>
+  <div class="head-strip2"> </div>
+  <div class="whole-container">
+
+    <!-- head ======================================================== -->
+
+    <div class="section-head">
+      <div class="logo-div">
+        <img src="images/thorlogo.png"/>
+      </div>
+      <div class="search-div">
+        <input class="search-input">
+        </input>
+        <button class="search-button">
+        </button>
+      </div>
+    </div>
+
+    <!-- nav ======================================================== -->
+
+    <div class="section-navi">
+        <a href="index.html"><span class="nav-button"> Home      </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+        <a href="index.html"><span class="nav-button"> Learn     </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+        <a href="index.html"><span class="nav-button"> Download  </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+        <a href="index.html"><span class="nav-button"> Community </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+        <a href="index.html"><span class="nav-button"> Code      </span></a>                                           
+    </div>
+
+    <!-- learn body (include side-bar and content ==================== -->
+
+    <div class="section-learn-body">
+      <div class="sidebar">
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">Quick Introduction</div>
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">Tour of ThorScript</div>
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">ThorScript walkthrough</div>
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">Tutorial video</div>
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">Language specification</div>
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">Reference</div>
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">Language module API</div>
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">FAQS</div>
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">Roadmap</div>
+        <hr class="learn-sidebar-hr"/>
+        <div class="sidebar-link">Tools</div>
+        <hr class="learn-sidebar-hr"/>
+      </div>
+      <div class="learn-content">
+
+        <div class="learn-content-chapter">
+          <h3>Online Learning</h3>
+
+          <p>
+          Scala is an acronym for "Scalable Language". This means that Scala
+          grows with you. You can play with it by typing one-line expressions and
+          observing the results. But you can also rely on it for large mission
+          critical systems, as many companies, including Twitter, LinkedIn, or
+          Intel do.
+          </p>
+
+          <p>
+          To some, Scala feels like a scripting language. Its syntax is concise
+          and low ceremony; its types get out of the way because the compiler can
+          infer them.  There's a REPL and IDE worksheets for quick feedback.
+          Developers like it so much that Scala won the ScriptBowl contest at the
+          2012 JavaOne conference.
+          </p>
+
+          <p>
+          At the same time, Scala is the preferred workhorse language for many
+          mission critical server systems. The generated code is on a par with
+          Java's and its precise typing means that many problems are caught at
+          compile-time rather than after deployment.
+          </p>
+
+          <p>
+          At the root, the language's scalability is the result of a careful
+          integration of object-oriented and functional language concepts.
+          </p>
+        </div>
+
+        <hr class="learn-chapter-hr"/>
+
+        <div class="learn-content-chapter">
+          <h3>Online Learning</h3>
+
+          <p>
+          Scala is an acronym for "Scalable Language". This means that Scala
+          grows with you. You can play with it by typing one-line expressions and
+          observing the results. But you can also rely on it for large mission
+          critical systems, as many companies, including Twitter, LinkedIn, or
+          Intel do.
+          </p>
+
+          <p>
+          To some, Scala feels like a scripting language. Its syntax is concise
+          and low ceremony; its types get out of the way because the compiler can
+          infer them.  There's a REPL and IDE worksheets for quick feedback.
+          Developers like it so much that Scala won the ScriptBowl contest at the
+          2012 JavaOne conference.
+          </p>
+
+          <p>
+          At the same time, Scala is the preferred workhorse language for many
+          mission critical server systems. The generated code is on a par with
+          Java's and its precise typing means that many problems are caught at
+          compile-time rather than after deployment.
+          </p>
+
+          <p>
+          At the root, the language's scalability is the result of a careful
+          integration of object-oriented and functional language concepts.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- foot ======================================================== -->
+
+    <div class="section-foot">
+      <div class="foot-zillians-logo">
+        <img src="images/zillianslogo.png"/>
+        © Copyright Zillians Inc 2012. All Rights Reserved
+      </div>
+      <div class="foot-thor-logo">
+        <img src="images/thorlogo.png"/>
+      </div>
+  
+    </div>
+
+    <!-- end ======================================================== -->
+
+    <a class="back-to-top" href="#">
+    </a>
+
+  </div>
+</body>
+</html>
