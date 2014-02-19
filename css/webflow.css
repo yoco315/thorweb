@@ -47,7 +47,7 @@ img {
     padding-top:8px;
     padding-bottom:8px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 5px 5px 0px 0px;
 }
 
 .section-online-compile {
@@ -57,7 +57,6 @@ img {
     padding-top:163px;
     padding-bottom:163px;
     height:650px;
-    border-radius: 5px;
 }
 
 .section-dont-know {
@@ -97,6 +96,7 @@ img {
     padding-right: 100px;
     width: 900px;
     display: table;
+    border-radius: 0px 0px 5px 5px;
 }
 
 .dont-know-text-large {
