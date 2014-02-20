@@ -18,6 +18,12 @@ body {
     background-attachment: fixed;
 }
 
+
+h3 {
+    font-size:25px;
+    margin-top:15px;
+}
+
 img {
     max-width:100%;
     vertical-align:middle;
@@ -253,6 +259,30 @@ img {
     border-radius: 5px;
 }
 
+.nav-button-selected-page {
+    color: #036;
+    display: inline-block;
+    background: linear-gradient(to bottom, #35b5e6 0%, #1995d5 100%);
+    height: 44px;
+    width: 154px;
+    line-height: 44px;
+    font-size:18px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.nav-button:active {
+    color: white;
+    display: inline-block;
+    background: linear-gradient(to bottom, #1995d5 0%, #35b5e6 100%);
+    height: 44px;
+    width: 154px;
+    line-height: 44px;
+    font-size:18px;
+    text-align: center;
+    border-radius: 5px;
+}
+
 .nav-vert-line {
     height: 44px;
     text-align: center;
@@ -268,6 +298,23 @@ img {
     display:table;
     margin-top: 40px;
     background-color:#0077c7;
+    color:#fff;
+    width: 220px;
+    height: 50px;
+    font-size:16px;
+    padding-top:17;
+    -webkit-transform: skew(-20deg); 
+    -moz-transform: skew(-20deg); 
+    -o-transform: skew(-20deg); 
+    transform: skew(-20deg);
+    border-radius: 5px;
+    text-align:center;
+}
+
+.btn-download:hover {
+    display:table;
+    margin-top: 40px;
+    background-color:#1995d5;
     color:#fff;
     width: 220px;
     height: 50px;
@@ -350,6 +397,21 @@ img {
     border-radius:3px;
     margin-left:auto;
     margin-right:auto;
+    display: inline-block;
+    line-height: 44px;
+}
+
+.learn-more-button:hover {
+    width:154px;
+    height:44px;
+    background-color:#1995d5;
+    color:#fff;
+    font-size:18px;
+    border-radius:3px;
+    margin-left:auto;
+    margin-right:auto;
+    display: inline-block;
+    line-height: 44px;
 }
 
 .back-to-top {
