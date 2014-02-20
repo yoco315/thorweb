@@ -86,12 +86,13 @@
 
     <div class="section-dont-know">
       <div class="dont-know-text-large">
-        Object-Oriented Meets Functional
+        Compile Language<br/>
+        Meets Script Language
       </div>
       <div class="dont-know-text-small">
-        Have the best of both worlds. Construct elegant class hierarchies
-        for maximum code reuse and extensibility, implement their behavior
-        using higher-order functions. Or anything in-between.
+        Have the best of both worlds. Now you can have the performance of
+        compiled language and the simplicity of script language. Compiler will
+        deduct types for you. Code less, run faster.
       </div>
     </div>
 
@@ -103,8 +104,8 @@
           ThorScirpt in a Nutshell
         </div>
         <div class="nutshell-text-small">
-          Have the best of both worlds. Construct elegang class hierarchies
-          for maximum code reuse and extensibility
+          Advanced features are included in ThorScript! Type Inference,
+          template, transection memory, and concurrency!
         </div>
       </div>
     </div>
@@ -118,22 +119,22 @@
             Seamless C++ Interlop
           </div>
           <div class="feature-block-text-small">
-            So the type system don't feel so static. Don't work for the type
-            system. Let the type system work for you.
+            Declare in ThorScript, implement is C++, use any C++ library you
+            like, and gain maximum performance.
           </div>
         </div>
         <div class="feature-block" id="feature_1" onclick="fon(1)">
           <div class="feature-block-text-large">
-            Seamless C++ Interlop
+            Zen of Template Programming
           </div>
           <div class="feature-block-text-small">
-            So the type system don't feel so static. Don't work for the type
-            system. Let the type system work for you.
+            Template function and class, free you from duplicated code. Write a
+            template, let compile do the rest.
           </div>
         </div>
         <div class="feature-block" id="feature_2" onclick="fon(2)">
           <div class="feature-block-text-large">
-            Seamless C++ Interlop
+            Automatic Type Infenence
           </div>
           <div class="feature-block-text-small">
             So the type system don't feel so static. Don't work for the type
@@ -157,10 +158,6 @@
           even for class template and function template!
         </div>
         <pre class="thor-source-code">
-@entry task main() {
-  println("hello");
-  exit(0);
-}
         </pre>
       </div>
     </div>
@@ -168,17 +165,23 @@
     <div class="section-feature-detail" id="sec_feature_detail_1">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
-          Featutr II
+          Zen of Template Programming
         </div>
         <div class="feature-detail-detail">
-          Featutr II
-          Featutr II
-          Featutr II
+          Write once, use everywhere. Both function and class. Template give
+          you the power from full generalization to partial specialization.
         </div>
         <pre class="thor-source-code">
+
+function<T> max(a:T, b:T) T {
+    return a > b ? a : b;
+}
+
 @entry task main() {
-  println("hello");
-  exit(0);
+    println(max(2, 3));             // 3
+    println(max(2.71828, 3.14159)); // 3.14
+    println("Ada, "Bob"));          // "Bob"
+    exit(0);
 }
         </pre>
       </div>
@@ -187,17 +190,19 @@
     <div class="section-feature-detail" id="sec_feature_detail_2">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
-          Featutr III
+          Automatic Type Infenence
         </div>
         <div class="feature-detail-detail">
-          Featutr III
-          Featutr III
-          Featutr III
+          Write like script, perform like compiled. ThorScript statically infers
+          all type for you. Minimize the typing, and maxize the performance.
         </div>
         <pre class="thor-source-code">
-@entry task main() {
-  println("hello");
-  exit(0);
+function foo() {
+    return 3.14;
+}
+
+function bar() {
+    var a = foo();  // a is float64
 }
         </pre>
       </div>
@@ -209,29 +214,26 @@
       <div class="grid">
         <div class="feature-block" id="feature_3" onclick="fon(3)">
           <div class="feature-block-text-large">
-            Seamless C++ Interlop
+            Support Parallel Co-Processor
           </div>
           <div class="feature-block-text-small">
-            So the type system don't feel so static. Don't work for the type
-            system. Let the type system work for you.
+            place holder
           </div>
         </div>
         <div class="feature-block" id="feature_4" onclick="fon(4)">
           <div class="feature-block-text-large">
-            Seamless C++ Interlop
+            Concurrency and Parallelism Made Easy
           </div>
           <div class="feature-block-text-small">
-            So the type system don't feel so static. Don't work for the type
-            system. Let the type system work for you.
+            place holder
           </div>
         </div>
         <div class="feature-block" id="feature_5"  onclick="fon(5)">
           <div class="feature-block-text-large">
-            Seamless C++ Interlop VI
+            Transectional Memory Support
           </div>
           <div class="feature-block-text-small">
-            So the type system don't feel so static. Don't work for the type
-            system. Let the type system work for you.
+            Atomic block make multi-thread programming easier than ever.
           </div>
         </div>
       </div>
@@ -242,7 +244,7 @@
     <div class="section-feature-detail" id="sec_feature_detail_3">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
-          Seamless C++ Interlop
+          Support Parallel Co-Processor
         </div>
         <div class="feature-detail-detail">
           You can bind native C++ to you ThorScript to leverage the max
@@ -262,7 +264,7 @@
     <div class="section-feature-detail" id="sec_feature_detail_4">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
-          Featutr II
+          Concurrency and Parallelism Made Easy
         </div>
         <div class="feature-detail-detail">
           Featutr II
@@ -281,17 +283,21 @@
     <div class="section-feature-detail" id="sec_feature_detail_5">
       <div class="feature-detail-block">
         <div class="feature-detail-title">
-          Featutr III
+          Transectional Memory Support
         </div>
         <div class="feature-detail-detail">
-          Featutr III
-          Featutr III
-          Featutr III
+          Atomic variable is good. Atomic block is better! ThorScript support
+          language level atomic block to simplify the multi-thread programming.
+          Now you don't have to lock a critical section. Transectional Memory
+          makes things easier, and perform better.
         </div>
         <pre class="thor-source-code">
-@entry task main() {
-  println("hello");
-  exit(0);
+function draw_money(ac:Account, money:int64) {
+    atomic {
+        if(money >= ac.balance) {
+            ac.balance -= money;
+        }
+    }
 }
         </pre>
       </div>
