@@ -30,6 +30,10 @@ img {
     display:inline-block;
 }
 
+a:hover, a:visited, a:link, a:active {
+    text-decoration:none;
+}
+
 .whole-container {
     margin-left:auto;
     margin-right:auto;
@@ -483,8 +487,7 @@ img {
 .sidebar-link:hover {
     height:42px;
     font-size:14px;
-    background-color:#b2d6ee;
-    background-image:url('../images/learn-sidebar-vertbar.png');
+    background:linear-gradient(to right, #00325f 0%, #00325f 5px, #b2d6ee 6px, #b2d6ee 100%);
     background-repeat:no-repeat;
     border-radius:3px;
     color:#0077c7;
