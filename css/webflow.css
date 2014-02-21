@@ -34,6 +34,17 @@ a:hover, a:visited, a:link, a:active {
     text-decoration:none;
 }
 
+code, pre {
+    background-color:#036;
+    color:#fff;
+    padding-left:4px;
+    padding-right:4px;
+    padding-top:4px;
+    padding-bottom:4px;
+    border-radius:4px;
+    word-wrap: break-word;
+}
+
 .whole-container {
     margin-left:auto;
     margin-right:auto;
@@ -64,9 +75,8 @@ a:hover, a:visited, a:link, a:active {
     background: linear-gradient(45deg, #ffffff 30%,#00325f 200%);
     padding-left:106px;
     padding-right:106px;
-    padding-top:163px;
-    padding-bottom:163px;
-    height:650px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 
 .section-dont-know {
@@ -225,8 +235,8 @@ a:hover, a:visited, a:link, a:active {
 .logo-div {
     display:table-cell; vertical-align:middle;
     float:left;
-    margin-top:10px;
     margin-left:30px;
+    margin-top:10px;
 }
 
 .search-div {
@@ -293,7 +303,6 @@ a:hover, a:visited, a:link, a:active {
 }
 
 .logo-and-download {
-    padding-top:25px;
     text-align: center;
     margin-left:auto;
     margin-right:auto;
@@ -524,6 +533,19 @@ a:hover, a:visited, a:link, a:active {
     color:#bfcbd7;
     margin-top:50px;
     margin-bottom:50px;
+}
+
+.thorscript-code-ol {
+    margin:0px;
+}
+
+.thorscript-code-block {
+    background-color:#036;
+    font-family:monospace;
+    color:#555;
+    padding:5px;
+    margin:10px;
+    border-radius:5px;
 }
 
 /*****************************************************************************

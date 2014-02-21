@@ -32,8 +32,8 @@
 
     <div class="section-navi">
       <a href="index.html"   ><span class="nav-button"              > Home      </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
-      <a href="learn.html"   ><span class="nav-button-selected-page"> Learn     </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
-      <a href="download.html"><span class="nav-button"              > Download  </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+      <a href="learn.html"   ><span class="nav-button"              > Learn     </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+      <a href="download.html"><span class="nav-button-selected-page"> Download  </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
       <a href="code.html"    ><span class="nav-button"              > Code      </span></a>
     </div>
 
@@ -42,31 +42,39 @@
     <div class="section-learn-body">
       <div class="sidebar">
         <hr class="learn-sidebar-hr"/>
-        <a href="#learn-tutorial"><div class="sidebar-link">Tutorial</div></a>
-        <hr class="learn-sidebar-hr"/>
-        <a href="#learn-language-reference"><div class="sidebar-link">Language Reference</div></a>
+        <a href="#ppa"><div class="sidebar-link">PPA</div></a>
         <hr class="learn-sidebar-hr"/>
       </div>
       <div class="learn-content">
 
         <a name="learn-tutorial"/>
         <div class="learn-content-chapter">
-          <h3>Tutorial</h3>
+          <h3>PPA</h3>
           <p>
-            <a href="../thor-doc/build/html/tutorial.html">Tutorial to ThorScript 0.7</a>
+            Add a file in <code>/etc/apt/sources.list.d</code> with follow content
+            <ul>
+              <li>
+                For Ubuntu 12.04 Precise amd64<br/>
+                <pre>deb http://s3-ap-southeast-1.amazonaws.com/thor.repository/ubuntu/dists/precise/main/binary-amd64 thor contrib</pre>
+              </li>
+              <li>
+                For Ubuntu 12.04 Precise i386<br/>
+                <pre>deb http://s3-ap-southeast-1.amazonaws.com/thor.repository/ubuntu/dists/precise/main/binary-i386 thor contrib</pre>
+              </li>
+              <li>
+                For Ubuntu 13.10 Saucy amd64<br/>
+                <pre>deb http://s3-ap-southeast-1.amazonaws.com/thor.repository/ubuntu/dists/saucy/main/binary-amd64 thor contrib</pre>
+              </li>
+              <li>
+                For Ubuntu 13.10 Saucy i386<br/>
+                <pre>deb http://s3-ap-southeast-1.amazonaws.com/thor.repository/ubuntu/dists/saucy/main/binary-i386 thor contrib</pre>
+              </li>
+            </ul>
           </p>
         </div>
 
         <hr class="learn-chapter-hr"/>
 
-        <a name="learn-language-reference"/>
-        <div class="learn-content-chapter">
-          <h3>Language Reference</h3>
-          <p>
-            <a href="../thor-doc/build/html/language-manual.html">Language reference of ThorScript 0.7</a>
-          </p>
-        </div>
-        <hr class="learn-chapter-hr"/>
       </div>
     </div>
 

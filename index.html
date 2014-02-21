@@ -44,18 +44,18 @@
     <!-- head ======================================================== -->
 
     <div class="section-head">
-      <div class="logo-div">
+      <a href="index.html" class="logo-div">
         <img src="images/thorlogo.png"/>
-      </div>
+      </a>
     </div>
 
     <!-- nav ======================================================== -->
 
     <div class="section-navi">
-      <a href="index.html"><span class="nav-button-selected-page"> Home      </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
-      <a href="learn.html"><span class="nav-button"> Learn     </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
-      <a href="index.html#download"><span class="nav-button"> Download  </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
-      <a href="code.html"><span class="nav-button"> Code      </span></a>
+      <a href="index.html"   ><span class="nav-button-selected-page"> Home      </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+      <a href="learn.html"   ><span class="nav-button"              > Learn     </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+      <a href="download.html"><span class="nav-button"              > Download  </span></a> <img src="images/veritcle-white-line.png" class="nav-vert-line"/>
+      <a href="code.html"    ><span class="nav-button"              > Code      </span></a>
     </div>
 
     <!-- download & coding ======================================================== -->
@@ -64,9 +64,9 @@
     <div class="section-online-compile">
       <div class="logo-and-download">
         <div class="compile-logo">
-          <img src="images/logo.png"/>
+          <img src="images/thor.png">
         </div>
-        <a href="thor-script.zip">
+        <a href="download.html">
           <div class="btn-download">
             <div class="text-download">
               DOWNLOAD
@@ -95,7 +95,7 @@
     <div class="section-feature-title">
       <div class="nutshell-text">
         <div class="nutshell-text-large">
-          ThorScirpt in a Nutshell
+          ThorScript in a Nutshell
         </div>
         <div class="nutshell-text-small">
           Advanced features are included in ThorScript! Type Inference,
@@ -165,19 +165,18 @@
           Write once, use everywhere. Both function and class. Template give
           you the power from full generalization to partial specialization.
         </div>
-        <pre class="thor-source-code">
-
-function<T> max(a:T, b:T) T {
-    return a > b ? a : b;
-}
-
-@entry task main() {
-    println(max(2, 3));             // 3
-    println(max(2.71828, 3.14159)); // 3.14
-    println("Ada, "Bob"));          // "Bob"
-    exit(0);
-}
-        </pre>
+        <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <li><b><font color="ffffb6">function</font></b><font color="cc0000">&lt;</font><font color="99cc99">T</font><font color="cc0000">&gt;</font>&nbsp;<font color="f0b4a8">max</font><font color="88bb33">(</font><font color="a8e6f0">a</font><font color="cc0000">:</font><font color="99cc99">T</font><font color="cc0000">,</font>&nbsp;<font color="f0a8cf">b</font><font color="cc0000">:</font><font color="99cc99">T</font><font color="88bb33">)</font>&nbsp;<font color="99cc99">T</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">return</font></b>&nbsp;<font color="a8e6f0">a</font>&nbsp;<font color="cc0000">&gt;</font>&nbsp;<font color="f0a8cf">b</font>&nbsp;<font color="cc0000">?</font>&nbsp;<font color="a8e6f0">a</font>&nbsp;<font color="cc0000">:</font>&nbsp;<font color="f0a8cf">b</font><font color="cc0000">;</font></li>
+          <li><font color="88bb33">}</font></li>
+          <li></li>
+          <li><b><font color="ffff00">@entry</font></b>&nbsp;<b><font color="ffffb6">task</font></b>&nbsp;<font color="b5a8f0">main</font><font color="88bb33">()</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0d4a8">println</font><font color="88bb33">(</font><font color="f0b4a8">max</font><font color="88bb33">(</font><font color="ff73fd">2</font><font color="cc0000">,</font>&nbsp;<font color="ff73fd">3</font><font color="88bb33">))</font><font color="cc0000">;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="666666">//&nbsp;3</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0d4a8">println</font><font color="88bb33">(</font><font color="f0b4a8">max</font><font color="88bb33">(</font><font color="ff73fd">2.71828</font><font color="cc0000">,</font>&nbsp;<font color="ff73fd">3.14159</font><font color="88bb33">))</font><font color="cc0000">;</font>&nbsp;<font color="666666">//&nbsp;3.14</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0d4a8">println</font><font color="88bb33">(</font><font color="f0b4a8">max</font><font color="88bb33">(</font><font color="a8ff60">&quot;Ada&quot;</font><font color="cc0000">,</font>&nbsp;<font color="a8ff60">&quot;Bob&quot;</font><font color="88bb33">))</font><font color="cc0000">;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="666666">//&nbsp;&quot;Bob&quot;</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0a8e2">exit</font><font color="88bb33">(</font><font color="ff73fd">0</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
+          <li><font color="88bb33">}</font></li>
+        </ol></div>
       </div>
     </div>
 
@@ -190,15 +189,15 @@ function<T> max(a:T, b:T) T {
           Write like script, perform like compiled. ThorScript statically infers
           all type for you. Minimize the typing, and maxize the performance.
         </div>
-        <pre class="thor-source-code">
-function foo() {
-    return 3.14;
-}
-
-function bar() {
-    var a = foo();  // a is float64
-}
-        </pre>
+        <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="f0bba8">foo</font><font color="88bb33">()</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">return</font></b>&nbsp;<font color="ff73fd">3.14</font><font color="cc0000">;</font></li>
+          <li><font color="88bb33">}</font></li>
+          <li></li>
+          <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8f0be">bar</font><font color="88bb33">()</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">var</font></b>&nbsp;<font color="a8e6f0">a</font>&nbsp;<font color="cc0000">=</font>&nbsp;<font color="f0bba8">foo</font><font color="88bb33">()</font><font color="cc0000">;</font>&nbsp;&nbsp;<font color="666666">//&nbsp;a&nbsp;is&nbsp;float64</font></li>
+          <li><font color="88bb33">}</font></li>
+        </ol></div>
       </div>
     </div>
 
@@ -250,8 +249,7 @@ function bar() {
 @entry task main() {
   println("hello");
   exit(0);
-}
-        </pre>
+}</pre>
       </div>
     </div>
 
@@ -269,8 +267,7 @@ function bar() {
 @entry task main() {
   println("hello");
   exit(0);
-}
-        </pre>
+}</pre>
       </div>
     </div>
 
@@ -285,15 +282,15 @@ function bar() {
           Now you don't have to lock a critical section. Transectional Memory
           makes things easier, and perform better.
         </div>
-        <pre class="thor-source-code">
-function draw_money(ac:Account, money:int64) {
-    atomic {
-        if(money >= ac.balance) {
-            ac.balance -= money;
-        }
-    }
-}
-        </pre>
+          <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="e7f0a8">draw_money</font><font color="88bb33">(</font><font color="f0bda8">ac</font><font color="cc0000">:</font><font color="a8e8f0">Account</font><font color="cc0000">,</font>&nbsp;<font color="dba8f0">money</font><font color="cc0000">:</font><b><font color="ffffb6">int64</font></b><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">atomic</font></b>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">if</font></b><font color="88bb33">(</font><font color="dba8f0">money</font>&nbsp;<font color="cc0000">&gt;=</font>&nbsp;<font color="f0bda8">ac</font><font color="cc0000">.</font><font color="a8daf0">balance</font><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0bda8">ac</font><font color="cc0000">.</font><font color="a8daf0">balance</font>&nbsp;<font color="cc0000">-=</font>&nbsp;<font color="dba8f0">money</font><font color="cc0000">;</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="88bb33">}</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<font color="88bb33">}</font></li>
+          <li><font color="88bb33">}</font></li>
+          </ol></div>
       </div>
     </div>
 
