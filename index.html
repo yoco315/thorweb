@@ -253,15 +253,21 @@
           Concurrency and Parallelism Made Easy
         </div>
         <div class="feature-detail-detail">
-          Featutr II
-          Featutr II
-          Featutr II
+          ThorScript makes multi-thread programming easy. User can create
+          asynchronous thread with keyword <code>async</code>, or launch several thread with
+          keyword <code>flow</code>.
         </div>
-        <pre class="thor-source-code">
-@entry task main() {
-  println("hello");
-  exit(0);
-}</pre>
+        <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8f0be">bar</font><font color="88bb33">(</font><font color="e9a8f0">n</font><font color="cc0000">:</font><b><font color="ffffb6">int64</font></b><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;<font color="a8f0d0">print</font><font color="88bb33">(</font><font color="e9a8f0">n</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
+          <li><font color="88bb33">}</font></li>
+          <li></li>
+          <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="f0bba8">foo</font><font color="88bb33">()</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">async</font></b>&nbsp;<font color="cc0000">-&gt;</font>&nbsp;<font color="a8f0be">bar</font><font color="88bb33">(</font><font color="ff73fd">1</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">async</font></b>&nbsp;<font color="cc0000">-&gt;</font>&nbsp;<font color="a8f0be">bar</font><font color="88bb33">(</font><font color="ff73fd">2</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">async</font></b>&nbsp;<font color="cc0000">-&gt;</font>&nbsp;<font color="a8f0be">bar</font><font color="88bb33">(</font><font color="ff73fd">3</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
+          <li><font color="88bb33">}</font></li>
+        </ol></div>
       </div>
     </div>
 

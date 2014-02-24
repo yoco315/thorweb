@@ -34,13 +34,22 @@ a:hover, a:visited, a:link, a:active {
     text-decoration:none;
 }
 
-code, pre {
+pre {
     background-color:#036;
     color:#fff;
     padding-left:4px;
     padding-right:4px;
     padding-top:4px;
     padding-bottom:4px;
+    border-radius:4px;
+    word-wrap: break-word;
+}
+
+code {
+    background-color:#036;
+    color:#fff;
+    padding-left:4px;
+    padding-right:4px;
     border-radius:4px;
     word-wrap: break-word;
 }
