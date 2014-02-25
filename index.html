@@ -125,7 +125,8 @@
             Concurrency and Parallelism Made Easy
           </div>
           <div class="feature-block-text-small">
-            place holder
+            Launch a new task in one line of code, or launch then join several
+            tasks easily.
           </div>
         </div>
       </div>
@@ -228,7 +229,7 @@
             Support Parallel Co-Processor
           </div>
           <div class="feature-block-text-small">
-            place holder
+            Leverage the power of other heterogeneous processors on your machine, and, other machines, within lines of code.
           </div>
         </div>
       </div>
@@ -270,8 +271,6 @@
           in C++. ThorScript compile tool chain will do the rest for you,
           even for class template and function template!
         </div>
-        <pre class="thor-source-code">
-        </pre>
       </div>
     </div>
 
@@ -281,10 +280,22 @@
           Support Parallel Co-Processor
         </div>
         <div class="feature-detail-detail">
-          place holder
+          ThorScript let you call functions on remote machine within just lines
+          of code. RPC(remote process call) is just as easy as local function
+          call.
         </div>
-        <pre class="thor-source-code">
-        </pre>
+        <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <li><font color="666666">//&nbsp;server</font></li>
+          <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8ebf0">player_attack</font><font color="88bb33">(</font><font color="aef0a8">attacker</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="cc0000">,</font>&nbsp;<font color="f0a8e5">defenser</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0a8e5">defenser</font><font color="cc0000">.</font><font color="f0a8d4">hp</font>&nbsp;<font color="cc0000">-=</font>&nbsp;<font color="aef0a8">attacker</font><font color="cc0000">.</font><font color="daa8f0">att</font><font color="cc0000">;</font></li>
+          <li><font color="88bb33">}</font></li>
+        </ol></div>
+        <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <li><font color="666666">//&nbsp;client</font></li>
+          <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8b0f0">attack</font><font color="88bb33">(</font><font color="a8e6f0">a</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="cc0000">,</font>&nbsp;<font color="d3f0a8">d</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
+          <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">async</font></b><font color="88bb33">[</font><font color="a8dcf0">game_server</font><font color="88bb33">]</font>&nbsp;<font color="cc0000">-&gt;</font>&nbsp;<font color="a8ebf0">player_attack</font><font color="88bb33">(</font><font color="a8e6f0">a</font><font color="cc0000">,</font>&nbsp;<font color="d3f0a8">d</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
+          <li><font color="88bb33">}</font></li>
+        </ol></div>
       </div>
     </div>
 
