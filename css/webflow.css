@@ -82,8 +82,6 @@ code {
 
 .section-online-compile {
     background: linear-gradient(45deg, #ffffff 30%,#00325f 200%);
-    padding-left:106px;
-    padding-right:106px;
     padding-top:100px;
     padding-bottom:100px;
 }
@@ -294,6 +292,14 @@ code {
     border-radius: 5px;
 }
 
+.pink {
+    background-color:rgba(127, 0, 0, 0.5);
+}
+
+.green {
+    background-color:rgba(0, 127, 0, 0.5);
+}
+
 .nav-button:active {
     color: white;
     display: inline-block;
@@ -319,13 +325,9 @@ code {
 
 .logo-and-download {
     text-align: center;
-    margin-left:auto;
-    margin-right:auto;
 }
 
 .btn-download {
-    margin-left:auto;
-    margin-right:auto;
     display:table;
     margin-top: 40px;
     background-color:#0077c7;
