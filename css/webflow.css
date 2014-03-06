@@ -257,6 +257,27 @@ code {
  * nav
  ****************************************************************************/
 
+.navbar-default {
+    background-color:#0077c7;
+    color:#ffffff;
+    border-radius:0;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-default .navbar-brand {
+    color:#eeeeee;
+}
+.navbar-default .navbar-nav > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    background: linear-gradient(to bottom, #35b5e6 0%, #1995d5 100%);
+}
+
 .nav-button {
     color: white;
     display: inline-block;
