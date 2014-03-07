@@ -89,12 +89,14 @@ code {
 .section-dont-know {
     display:table;
     background-color:#003c6e;
-    padding:100px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 
 .section-feature-title {
     background-color:#f2f2f2;
-    padding:100px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 
 .section-feature-grid {
@@ -166,6 +168,27 @@ code {
     width: 720px;
 }
 
+.panel-default {
+    border-width: 0px;
+    color: #fff;
+}
+
+.panel-default > .panel-heading {
+    background-color: #0077c7;
+    border-radius: 0px;
+    border-width: 0px;
+    color: #fff;
+}
+
+.panel-group {
+    margin-bottom:0px;
+}
+
+.padding-5 {
+    padding:10px;
+    background-color:#f2f2f2;
+}
+
 .feature-block {
     height: 240px;
     width: 230px;
@@ -206,6 +229,18 @@ code {
     cursor:pointer;
 }
 
+.width-80 {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.feature-block-text-large-sm {
+    font-size: 20px;
+    line-height: 25px; 
+}
+
 .feature-block-text-large {
     margin-top: 30px;
     font-size: 20px;
@@ -222,6 +257,9 @@ code {
     padding:100px;
 }
 
+.feature-detail-block-sm {
+}
+
 .feature-detail-title {
     font-size: 20px;
     line-height: 25px; 
@@ -233,6 +271,10 @@ code {
     line-height: 17px; 
     margin-top: 20px;
     color: #003c6e;
+}
+
+.panel-body {
+    background-color:#dcdcdc;
 }
 
 /*****************************************************************************
@@ -260,22 +302,40 @@ code {
 .navbar-default {
     background-color:#0077c7;
     color:#ffffff;
-    border-radius:0;
+    border-radius:5px;
+    border-width:0;
+    padding-top:8px;
+    padding-bottom:8px;
+    font-size:18px;
 }
 
 .navbar-default .navbar-nav > li > a {
     color:#fff;
+    border-radius:5px;
+    min-width: 154px;
+    text-align:center;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
     color: #ffffff;
+    border-radius:5px;
+    min-width: 154px;
+    text-align:center;
     background-color:transparent;
 }
 .navbar-default .navbar-brand {
     color:#eeeeee;
+    border-radius:5px;
+    min-width: 154px;
+    text-align:center;
 }
 .navbar-default .navbar-nav > li > a:hover, .nav > li > a:focus {
+    border-radius:5px;
     text-decoration: none;
     background: linear-gradient(to bottom, #35b5e6 0%, #1995d5 100%);
+    min-width: 154px;
+    text-align:center;
+    border-radius:5;
+    border-width:0;
 }
 
 .nav-button {
@@ -584,6 +644,25 @@ code {
     padding:5px;
     margin:10px;
     border-radius:5px;
+}
+
+.thorscript-code-block-sm {
+    background-color:#036;
+    font-family:monospace;
+    font-size:11px;
+    color:#555;
+    padding:5px;
+    margin-top:10px;
+    border-radius:5px;
+}
+
+.round-bottom-5 {
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
+}
+
+.background-white {
+    background-color:#fff;
 }
 
 /*****************************************************************************
