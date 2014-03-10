@@ -710,12 +710,22 @@ code {
     .xs-border-white {
         border-color:#fff;
     }
-    .xs-navbar-fix-top {
+    .xs-navbar-fix-top-10 {
         position: fixed;
-        top: 0;
-        left: 0;
+        top: 10px;
+        left: 0px;
         width: 100%;
         z-index: 1030;
+    }
+    .xs-fixed-top {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        z-index: 1029;
+    }
+    body {
+        padding-top:70px;
     }
 }
 
