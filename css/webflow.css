@@ -302,15 +302,13 @@ code {
     background-color:#fff;
     color:#ffffff;
     border-radius:5px;
-    border-width:0;
+    border-top-width:4px;
+    border-bottom-width:4px;
+    border-color:#0077c7;
     padding-top:0px;
     padding-bottom:0px;
     font-size:18px;
     margin-bottom:0px;
-    border-top-left-radius:0px;
-    border-top-right-radius:0px;
-    border-bottom-left-radius:0px;
-    border-bottom-right-radius:0px;
 }
 
 .navbar-collapse {
@@ -689,10 +687,24 @@ code {
     color:#fff;
 }
 
-@media (max-width:992px) {
-    .sm-round-bottom-0 {
+.max-900 {
+    max-width:900px;
+}
+
+@media (max-width: 767px) {
+    .xs-round-bottom-0 {
         border-bottom-left-radius:0px;
         border-bottom-right-radius:0px;
+    }
+    .xs-round-top-0 {
+        border-bottom-left-radius:0px;
+        border-bottom-right-radius:0px;
+    }
+    .xs-round-0 {
+        border-radius:0px;
+    }
+    .xs-border-white {
+        border-color:#fff;
     }
 }
 
