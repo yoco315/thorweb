@@ -299,16 +299,22 @@ code {
  ****************************************************************************/
 
 .navbar-default {
-    background-color:#0077c7;
+    background-color:#fff;
     color:#ffffff;
     border-radius:5px;
     border-width:0;
-    padding-top:8px;
-    padding-bottom:8px;
+    padding-top:0px;
+    padding-bottom:0px;
     font-size:18px;
     margin-bottom:0px;
     border-top-left-radius:0px;
     border-top-right-radius:0px;
+    border-bottom-left-radius:0px;
+    border-bottom-right-radius:0px;
+}
+
+.navbar-collapse {
+    background-color:#0077c7;
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -338,6 +344,18 @@ code {
     text-align:center;
     border-radius:5;
     border-width:0;
+}
+.navbar-toggle {
+    border-width:0px;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #003c6e;
+    width:22;
+    height:2px;
+}
+.navbar-brand {
+    padding:4px;
+    margin-left:30px;
 }
 
 .nav-button {
@@ -665,10 +683,6 @@ code {
 
 .background-white {
     background-color:#fff;
-}
-
-.navbar-default .navbar-toggle .icon-bar {
-  background-color: #fff;
 }
 
 .text-white {
