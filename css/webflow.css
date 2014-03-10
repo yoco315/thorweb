@@ -87,7 +87,6 @@ code {
 }
 
 .section-dont-know {
-    display:table;
     background-color:#003c6e;
     padding-top:100px;
     padding-bottom:100px;
