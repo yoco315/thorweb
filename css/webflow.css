@@ -374,11 +374,12 @@ code {
 }
 .navbar-toggle {
     border-width:0px;
+    padding:8px 10px;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: #003c6e;
-    width:22;
-    height:2px;
+    width:27px;
+    height:4px;
 }
 .navbar-brand {
     padding:4px;
