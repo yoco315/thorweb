@@ -318,33 +318,59 @@ code {
     background-color:#0077c7;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color:#fff;
-    border-radius:5px;
-    min-width: 154px;
-    text-align:center;
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav > li > a {
+        color:#fff;
+        min-width: 154px;
+        text-align:center;
+    }
+    .navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+        color: #ffffff;
+        min-width: 154px;
+        text-align:center;
+        background-color:transparent;
+    }
+    .navbar-default .navbar-brand {
+        color:#eeeeee;
+        min-width: 154px;
+        text-align:center;
+    }
+    .navbar-default .navbar-nav > li > a:hover, .nav > li > a:focus {
+        text-decoration: none;
+        background: linear-gradient(to bottom, #35b5e6 0%, #1995d5 100%);
+        min-width: 154px;
+        text-align:center;
+        border-width:0;
+    }
 }
-.navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
-    color: #ffffff;
-    border-radius:5px;
-    min-width: 154px;
-    text-align:center;
-    background-color:transparent;
-}
-.navbar-default .navbar-brand {
-    color:#eeeeee;
-    border-radius:5px;
-    min-width: 154px;
-    text-align:center;
-}
-.navbar-default .navbar-nav > li > a:hover, .nav > li > a:focus {
-    border-radius:5px;
-    text-decoration: none;
-    background: linear-gradient(to bottom, #35b5e6 0%, #1995d5 100%);
-    min-width: 154px;
-    text-align:center;
-    border-radius:5;
-    border-width:0;
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > li > a {
+        color:#fff;
+        border-radius:5px;
+        min-width: 154px;
+        text-align:center;
+    }
+    .navbar-default .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+        color: #ffffff;
+        border-radius:5px;
+        min-width: 154px;
+        text-align:center;
+        background-color:transparent;
+    }
+    .navbar-default .navbar-brand {
+        color:#eeeeee;
+        border-radius:5px;
+        min-width: 154px;
+        text-align:center;
+    }
+    .navbar-default .navbar-nav > li > a:hover, .nav > li > a:focus {
+        border-radius:5px;
+        text-decoration: none;
+        background: linear-gradient(to bottom, #35b5e6 0%, #1995d5 100%);
+        min-width: 154px;
+        text-align:center;
+        border-width:0;
+    }
 }
 .navbar-toggle {
     border-width:0px;
@@ -510,11 +536,21 @@ code {
     resize: none;
 }
 
-.foot-zillians-logo {
-    float: left;
-    font-size: 10px;
-    padding-top: 8px;
-    display:table-cell; vertical-align:center;
+@media (min-width: 768px) {
+  .foot-zillians-logo {
+      float:left;
+      font-size: 10px;
+      padding-top: 8px;
+      display:table-cell; vertical-align:center;
+  }
+}
+
+@media (max-width: 767px) {
+    .foot-zillians-logo {
+        font-size: 10px;
+        padding-top: 8px;
+        text-align: center;
+    }
 }
 
 .foot-thor-logo {
@@ -726,6 +762,16 @@ code {
     }
     body {
         padding-top:70px;
+    }
+    .xs-b-padding-8 {
+        padding-bottom:8px;
+    }
+}
+
+@media (min-width: 768px) {
+    .sm-v-padding-40 {
+        padding-top:40px;
+        padding-bottom:40px;
     }
 }
 
