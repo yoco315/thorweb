@@ -24,6 +24,10 @@ h3 {
     margin-top:15px;
 }
 
+.dark-blue-text {
+    color:#003c6e;
+}
+
 img {
     max-width:100%;
     vertical-align:middle;
@@ -668,13 +672,12 @@ code {
 .section-learn-body {
     overflow:auto;
     background-color:#fff;
-    padding:100px;
+    padding-top:100px;
+    padding-bottom:100px;
 }
 
 .sidebar {
-    float:left;
     display:inline-block;
-    width:180px;
 }
 
 .sidebar-link {
@@ -697,9 +700,6 @@ code {
 }
 
 .learn-content {
-    float:right;
-    width:520px;
-    padding-left:35px;
     color:#003c6e;
 
 }

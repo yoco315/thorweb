@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Thu Feb 13 2014 10:57:21 GMT+0000 (UTC) -->
 <html data-wf-site="52fb3b590998ff795100053b">
 <head>
   <meta charset="utf-8">
   <title>ThorScript Programming Language</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+  <link href="css/webflow.css" rel="stylesheet" media="screen">
 </head>
 
-<body class="body-background">
-  <div class="head-strip1"> </div>
+<body>
+  <div class="head-strip1 xs-fixed-top"> </div>
   <div class="head-strip2"> </div>
-  <div class="whole-container">
+  <div class="container-fluid max-900">
 
     <!-- head ======================================================== -->
 
-    <div class="section-head">
+    <div class="hidden-xs section-head">
       <a href="index.html" class="logo-div">
         <img src="images/thorlogo.png"/>
       </a>
@@ -24,29 +24,56 @@
 
     <!-- nav ======================================================== -->
 
-    <div class="section-navi">
-      <a href="index.html"   ><span class="nav-button"              > Home      </span></a> <span class="nav-vert-line">&nbsp;</span>
-      <a href="learn.html"   ><span class="nav-button-selected-page"> Learn     </span></a> <span class="nav-vert-line">&nbsp;</span>
-      <a href="download.html"><span class="nav-button"              > Download  </span></a> <span class="nav-vert-line">&nbsp;</span>
-      <a href="code.html"    ><span class="nav-button"              > Code      </span></a>
+    <div class="row">
+      <nav class="navbar navbar-default xs-border-white xs-round-0 xs-navbar-fix-top-10" role="navigation">
+        <div class="col-12">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="visible-xs">
+              <a class="navbar-brand" href="#">
+                <img src="images/thorlogo.png"/>
+              </a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li><a href="index.html">Home</a></li>
+              <li class="active"><a href="#"   >Learn</a></li>
+              <li><a href="download.html">Download</a></li>
+              <li><a href="code.html"    >Code</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
     </div>
 
     <!-- learn body (include side-bar and content ==================== -->
 
-    <div class="section-learn-body">
-      <div class="sidebar">
+    <div class="row section-learn-body">
+
+      <!-- sidebar -->
+      <div class="col-sm-3 col-sm-offset-1 hidden-xs sidebar">
         <hr class="learn-sidebar-hr"/>
         <a href="#learn-tutorial"><div class="sidebar-link">Tutorial</div></a>
         <hr class="learn-sidebar-hr"/>
         <a href="#learn-language-reference"><div class="sidebar-link">Language Reference</div></a>
         <hr class="learn-sidebar-hr"/>
       </div>
-      <div class="learn-content">
 
+      <!-- content -->
+      <div class="col-sm-6 col-sm-offset-1 learn-content">
         <a name="learn-tutorial"/>
         <div class="learn-content-chapter">
-          <h3>Tutorial</h3>
-          <p>
+          <h3 class="dark-blue-text">Tutorial</h3>
+          <p class="dark-blue-text">
             <a href="../thor-doc/build/html/tutorial.html">Tutorial to ThorScript 0.7</a>
           </p>
         </div>
@@ -55,8 +82,8 @@
 
         <a name="learn-language-reference"/>
         <div class="learn-content-chapter">
-          <h3>Language Reference</h3>
-          <p>
+          <h3 class="dark-blue-text">Language Reference</h3>
+          <p class="dark-blue-text">
             <a href="../thor-doc/build/html/language-manual.html">Language reference of ThorScript 0.7</a>
           </p>
         </div>
@@ -64,15 +91,18 @@
       </div>
     </div>
 
+
     <!-- foot ======================================================== -->
 
-    <div class="section-foot">
-      <div class="foot-zillians-logo">
-        <img src="images/zillianslogo.png"/>
-        © Copyright ZILLIANS INC 2014. All Rights Reserved
-      </div>
-      <div class="foot-thor-logo">
-        <img src="images/thorlogo.png"/>
+    <div class="row background-white round-bottom-5 xs-round-bottom-0 xs-b-padding-8 sm-v-padding-40">
+      <div class="col-xs-12">
+        <div class="foot-zillians-logo">
+          <img src="images/zillianslogo.png"/>
+          © Copyright ZILLIANS INC 2014. All Rights Reserved
+        </div>
+        <div class="foot-thor-logo hidden-xs">
+          <img src="images/thorlogo.png"/>
+        </div>
       </div>
   
     </div>
@@ -83,5 +113,8 @@
     </a>
 
   </div>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
