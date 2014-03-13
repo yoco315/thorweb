@@ -49,6 +49,10 @@ pre {
     word-wrap: break-word;
 }
 
+h4 {
+    font-family: Helvetica;
+}
+
 code {
     background-color:#036;
     color:#fff;
@@ -588,7 +592,7 @@ code {
       font-size: 10px;
       padding-top: 8px;
       padding-left: 8.33%;
-      display:table-cell; vertical-align:center;
+      display:block; vertical-align:center;
   }
 }
 
@@ -775,6 +779,11 @@ code {
     max-width:900px;
 }
 
+.copyright-text {
+    padding-left:5px;
+    display: inline-block;
+}
+
 @media (max-width: 767px) {
     .xs-round-bottom-0 {
         border-bottom-left-radius:0px;
@@ -810,6 +819,14 @@ code {
     .xs-b-padding-8 {
         padding-bottom:8px;
     }
+}
+
+.padding-bottom-3 {
+    padding-bottom:3px;
+}
+
+.padding-top-8 {
+    padding-top:8px;
 }
 
 @media (min-width: 768px) {
