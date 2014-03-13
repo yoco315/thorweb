@@ -829,6 +829,11 @@ code {
     padding-top:8px;
 }
 
+.img-248-217 {
+    width:248px;
+    height:217px;
+}
+
 @media (min-width: 768px) {
     .sm-v-padding-40 {
         padding-top:40px;
