@@ -739,11 +739,11 @@ code {
     margin-bottom:50px;
 }
 
-.thorscript-code-ol {
+.thor-code-ol {
     margin:0px;
 }
 
-.thorscript-code-block {
+.thor-code-block {
     background-color:#036;
     font-family:monospace;
     color:#555;
@@ -752,7 +752,7 @@ code {
     border-radius:5px;
 }
 
-.thorscript-code-block-sm {
+.thor-code-block-sm {
     background-color:#036;
     font-family:monospace;
     font-size:11px;

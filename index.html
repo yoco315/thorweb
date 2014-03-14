@@ -2,7 +2,7 @@
 <html data-wf-site="52fb3b590998ff795100053b">
 <head>
   <meta charset="utf-8">
-  <title>ThorScript Programming Language</title>
+  <title>Thor Programming Language</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bootstrap -->
   <link href="css/bootstrap.css" rel="stylesheet" media="screen">
@@ -134,10 +134,10 @@
       <div class="col-sm-8 col-xs-12">
         <div class="nutshell-text">
           <div class="nutshell-text-large">
-            ThorScript in a Nutshell
+            Thor in a Nutshell
           </div>
           <div class="nutshell-text-small">
-            Advanced features are included in ThorScript! Type Inference,
+            Advanced features are included in Thor! Type Inference,
             template, transactional memory, and concurrency!
           </div>
         </div>
@@ -171,10 +171,10 @@
                   Automatic Type Infenence
                 </div>
                 <div class="feature-detail-detail">
-                  Write like script, perform like compiled. ThorScript statically infers
+                  Write like script, perform like compiled. Thor statically infers
                   all type for you. Minimize the typing, and maxize the performance.
                 </div>
-                <div class="thorscript-code-block-sm"><ol class="thorscript-code-ol">
+                <div class="thor-code-block-sm"><ol class="thor-code-ol">
                   <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="f0bba8">foo</font><font color="88bb33">()</font>&nbsp;<font color="88bb33">{</font></li>
                   <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">return</font></b>&nbsp;<font color="ff73fd">3.14</font><font color="cc0000">;</font></li>
                   <li><font color="88bb33">}</font></li>
@@ -214,7 +214,7 @@
                   Write once, use everywhere. Both function and class. Template give
                   you the power from full generalization to partial specialization.
                 </div>
-                <div class="thorscript-code-block-sm"><ol class="thorscript-code-ol">
+                <div class="thor-code-block-sm"><ol class="thor-code-ol">
                     <li><b><font color="ffffb6">function</font></b><font color="cc0000">&lt;</font><font color="99cc99">T</font><font color="cc0000">&gt;</font>&nbsp;<font color="f0b4a8">max</font><font color="88bb33">(</font><font color="a8e6f0">a</font><font color="cc0000">:</font><font color="99cc99">T</font><font color="cc0000">,</font>&nbsp;<font color="f0a8cf">b</font><font color="cc0000">:</font><font color="99cc99">T</font><font color="88bb33">)</font>&nbsp;<font color="99cc99">T</font>&nbsp;<font color="88bb33">{</font></li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">return</font></b>&nbsp;<font color="a8e6f0">a</font>&nbsp;<font color="cc0000">&gt;</font>&nbsp;<font color="f0a8cf">b</font>&nbsp;<font color="cc0000">?</font>&nbsp;<font color="a8e6f0">a</font>&nbsp;<font color="cc0000">:</font>&nbsp;<font color="f0a8cf">b</font><font color="cc0000">;</font></li>
                     <li><font color="88bb33">}</font></li>
@@ -254,11 +254,11 @@
                   Concurrency and Parallelism Made Easy
                 </div>
                 <div class="feature-detail-detail">
-                  ThorScript makes multi-thread programming easy. User can create
+                  Thor makes multi-thread programming easy. User can create
                   asynchronous thread with keyword <code>async</code>, or launch several thread with
                   keyword <code>flow</code>.
                 </div>
-                <div class="thorscript-code-block-sm"><ol class="thorscript-code-ol">
+                <div class="thor-code-block-sm"><ol class="thor-code-ol">
                     <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8f0be">bar</font><font color="88bb33">(</font><font color="e9a8f0">n</font><font color="cc0000">:</font><b><font color="ffffb6">int64</font></b><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
                     <li>&nbsp;&nbsp;<font color="a8f0d0">print</font><font color="88bb33">(</font><font color="e9a8f0">n</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
                     <li><font color="88bb33">}</font></li>
@@ -296,12 +296,12 @@
                   Transactional Memory Support
                 </div>
                 <div class="feature-detail-detail">
-                  Atomic variable is good. Atomic block is better! ThorScript support
+                  Atomic variable is good. Atomic block is better! Thor support
                   language level atomic block to simplify the multi-thread programming.
                   Now you don't have to lock a critical section. Transactional Memory
                   makes things easier, and perform better.
                 </div>
-                <div class="thorscript-code-block-sm"><ol class="thorscript-code-ol">
+                <div class="thor-code-block-sm"><ol class="thor-code-ol">
                   <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="e7f0a8">draw_money</font><font color="88bb33">(</font><font color="f0bda8">ac</font><font color="cc0000">:</font><font color="a8e8f0">Account</font><font color="cc0000">,</font>&nbsp;<font color="dba8f0">money</font><font color="cc0000">:</font><b><font color="ffffb6">int64</font></b><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
                   <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">atomic</font></b>&nbsp;<font color="88bb33">{</font></li>
                   <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">if</font></b><font color="88bb33">(</font><font color="dba8f0">money</font>&nbsp;<font color="cc0000">&gt;=</font>&nbsp;<font color="f0bda8">ac</font><font color="cc0000">.</font><font color="a8daf0">balance</font><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
@@ -324,7 +324,7 @@
                     Seamless C++ Interlop
                   </div>
                   <div class="feature-block-text-small">
-                    Declare in ThorScript, implement is C++, use any C++ library you
+                    Declare in Thor, implement is C++, use any C++ library you
                     like, and gain maximum performance.
                   </div>
                 </div>
@@ -338,9 +338,9 @@
                   Seamless C++ Interlop
                 </div>
                 <div class="feature-detail-detail">
-                  You can bind native C++ to you ThorScript to leverage the max
-                  performance. Declare interface in ThorScript, and implement it
-                  in C++. ThorScript compile tool chain will do the rest for you,
+                  You can bind native C++ to you Thor to leverage the max
+                  performance. Declare interface in Thor, and implement it
+                  in C++. Thor compile tool chain will do the rest for you,
                   even for class template and function template!
                 </div>
               </div>
@@ -371,17 +371,17 @@
                   Support Parallel Co-Processor
                 </div>
                 <div class="feature-detail-detail">
-                  ThorScript let you call functions on remote machine within just lines
+                  Thor let you call functions on remote machine within just lines
                   of code. RPC(remote process call) is just as easy as local function
                   call.
                 </div>
-                <div class="thorscript-code-block-sm"><ol class="thorscript-code-ol">
+                <div class="thor-code-block-sm"><ol class="thor-code-ol">
                     <li><font color="666666">//&nbsp;server</font></li>
                     <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8ebf0">player_attack</font><font color="88bb33">(</font><font color="aef0a8">attacker</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="cc0000">,</font>&nbsp;<font color="f0a8e5">defenser</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0a8e5">defenser</font><font color="cc0000">.</font><font color="f0a8d4">hp</font>&nbsp;<font color="cc0000">-=</font>&nbsp;<font color="aef0a8">attacker</font><font color="cc0000">.</font><font color="daa8f0">att</font><font color="cc0000">;</font></li>
                     <li><font color="88bb33">}</font></li>
                 </ol></div>
-                <div class="thorscript-code-block-sm"><ol class="thorscript-code-ol">
+                <div class="thor-code-block-sm"><ol class="thor-code-ol">
                     <li><font color="666666">//&nbsp;client</font></li>
                     <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8b0f0">attack</font><font color="88bb33">(</font><font color="a8e6f0">a</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="cc0000">,</font>&nbsp;<font color="d3f0a8">d</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
                     <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">async</font></b><font color="88bb33">[</font><font color="a8dcf0">game_server</font><font color="88bb33">]</font>&nbsp;<font color="cc0000">-&gt;</font>&nbsp;<font color="a8ebf0">player_attack</font><font color="88bb33">(</font><font color="a8e6f0">a</font><font color="cc0000">,</font>&nbsp;<font color="d3f0a8">d</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
@@ -438,10 +438,10 @@
             Automatic Type Infenence
           </div>
           <div class="feature-detail-detail">
-            Write like script, perform like compiled. ThorScript statically infers
+            Write like script, perform like compiled. Thor statically infers
             all type for you. Minimize the typing, and maxize the performance.
           </div>
-          <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <div class="thor-code-block"><ol class="thor-code-ol">
             <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="f0bba8">foo</font><font color="88bb33">()</font>&nbsp;<font color="88bb33">{</font></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">return</font></b>&nbsp;<font color="ff73fd">3.14</font><font color="cc0000">;</font></li>
             <li><font color="88bb33">}</font></li>
@@ -462,7 +462,7 @@
             Write once, use everywhere. Both function and class. Template give
             you the power from full generalization to partial specialization.
           </div>
-          <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <div class="thor-code-block"><ol class="thor-code-ol">
             <li><b><font color="ffffb6">function</font></b><font color="cc0000">&lt;</font><font color="99cc99">T</font><font color="cc0000">&gt;</font>&nbsp;<font color="f0b4a8">max</font><font color="88bb33">(</font><font color="a8e6f0">a</font><font color="cc0000">:</font><font color="99cc99">T</font><font color="cc0000">,</font>&nbsp;<font color="f0a8cf">b</font><font color="cc0000">:</font><font color="99cc99">T</font><font color="88bb33">)</font>&nbsp;<font color="99cc99">T</font>&nbsp;<font color="88bb33">{</font></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">return</font></b>&nbsp;<font color="a8e6f0">a</font>&nbsp;<font color="cc0000">&gt;</font>&nbsp;<font color="f0a8cf">b</font>&nbsp;<font color="cc0000">?</font>&nbsp;<font color="a8e6f0">a</font>&nbsp;<font color="cc0000">:</font>&nbsp;<font color="f0a8cf">b</font><font color="cc0000">;</font></li>
             <li><font color="88bb33">}</font></li>
@@ -483,11 +483,11 @@
             Concurrency and Parallelism Made Easy
           </div>
           <div class="feature-detail-detail">
-            ThorScript makes multi-thread programming easy. User can create
+            Thor makes multi-thread programming easy. User can create
             asynchronous thread with keyword <code>async</code>, or launch several thread with
             keyword <code>flow</code>.
           </div>
-          <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <div class="thor-code-block"><ol class="thor-code-ol">
             <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8f0be">bar</font><font color="88bb33">(</font><font color="e9a8f0">n</font><font color="cc0000">:</font><b><font color="ffffb6">int64</font></b><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
             <li>&nbsp;&nbsp;<font color="a8f0d0">print</font><font color="88bb33">(</font><font color="e9a8f0">n</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
             <li><font color="88bb33">}</font></li>
@@ -518,7 +518,7 @@
               Seamless C++ Interlop
             </div>
             <div class="feature-block-text-small">
-              Declare in ThorScript, implement is C++, use any C++ library you
+              Declare in Thor, implement is C++, use any C++ library you
               like, and gain maximum performance.
             </div>
           </div>
@@ -541,12 +541,12 @@
             Transactional Memory Support
           </div>
           <div class="feature-detail-detail">
-            Atomic variable is good. Atomic block is better! ThorScript support
+            Atomic variable is good. Atomic block is better! Thor support
             language level atomic block to simplify the multi-thread programming.
             Now you don't have to lock a critical section. Transactional Memory
             makes things easier, and perform better.
           </div>
-            <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+            <div class="thor-code-block"><ol class="thor-code-ol">
             <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="e7f0a8">draw_money</font><font color="88bb33">(</font><font color="f0bda8">ac</font><font color="cc0000">:</font><font color="a8e8f0">Account</font><font color="cc0000">,</font>&nbsp;<font color="dba8f0">money</font><font color="cc0000">:</font><b><font color="ffffb6">int64</font></b><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">atomic</font></b>&nbsp;<font color="88bb33">{</font></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">if</font></b><font color="88bb33">(</font><font color="dba8f0">money</font>&nbsp;<font color="cc0000">&gt;=</font>&nbsp;<font color="f0bda8">ac</font><font color="cc0000">.</font><font color="a8daf0">balance</font><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
@@ -564,9 +564,9 @@
             Seamless C++ Interlop
           </div>
           <div class="feature-detail-detail">
-            You can bind native C++ to you ThorScript to leverage the max
-            performance. Declare interface in ThorScript, and implement it
-            in C++. ThorScript compile tool chain will do the rest for you,
+            You can bind native C++ to you Thor to leverage the max
+            performance. Declare interface in Thor, and implement it
+            in C++. Thor compile tool chain will do the rest for you,
             even for class template and function template!
           </div>
         </div>
@@ -578,17 +578,17 @@
             Support Parallel Co-Processor
           </div>
           <div class="feature-detail-detail">
-            ThorScript let you call functions on remote machine within just lines
+            Thor let you call functions on remote machine within just lines
             of code. RPC(remote process call) is just as easy as local function
             call.
           </div>
-          <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <div class="thor-code-block"><ol class="thor-code-ol">
             <li><font color="666666">//&nbsp;server</font></li>
             <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8ebf0">player_attack</font><font color="88bb33">(</font><font color="aef0a8">attacker</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="cc0000">,</font>&nbsp;<font color="f0a8e5">defenser</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;<font color="f0a8e5">defenser</font><font color="cc0000">.</font><font color="f0a8d4">hp</font>&nbsp;<font color="cc0000">-=</font>&nbsp;<font color="aef0a8">attacker</font><font color="cc0000">.</font><font color="daa8f0">att</font><font color="cc0000">;</font></li>
             <li><font color="88bb33">}</font></li>
           </ol></div>
-          <div class="thorscript-code-block"><ol class="thorscript-code-ol">
+          <div class="thor-code-block"><ol class="thor-code-ol">
             <li><font color="666666">//&nbsp;client</font></li>
             <li><b><font color="ffffb6">function</font></b>&nbsp;<font color="a8b0f0">attack</font><font color="88bb33">(</font><font color="a8e6f0">a</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="cc0000">,</font>&nbsp;<font color="d3f0a8">d</font><font color="cc0000">:</font><font color="f0a8d6">Player</font><font color="88bb33">)</font>&nbsp;<font color="88bb33">{</font></li>
             <li>&nbsp;&nbsp;&nbsp;&nbsp;<b><font color="ffffb6">async</font></b><font color="88bb33">[</font><font color="a8dcf0">game_server</font><font color="88bb33">]</font>&nbsp;<font color="cc0000">-&gt;</font>&nbsp;<font color="a8ebf0">player_attack</font><font color="88bb33">(</font><font color="a8e6f0">a</font><font color="cc0000">,</font>&nbsp;<font color="d3f0a8">d</font><font color="88bb33">)</font><font color="cc0000">;</font></li>
